@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Header (Pattern)"/>
+  <title>Header (Pattern)</title>
+</head>
+
+<body class="bg-base">
+
+<header class="grid-template gap-y-0">
+  <div class="col-full flex justify-center py-static-xs px-static-md bg-surface dark">
+    <p class="prose-text-xs">All sizes shown for Porsche Lifestyle products are EU sizes</p>
+  </div>
+  <div class="col-wide grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-fluid-md items-center min-h-[80px]">
+    <div class="flex flex-wrap gap-static-md items-center justify-start">
+      <nav aria-label="Main">
+        <p-button-pure id="nav-button" class="p-static-xs -m-static-xs" type="button" icon="menu-lines" hide-label="{base: true, s: false}" aria="{'aria-haspopup': 'dialog'}">Menu</p-button-pure>
+        <p-drilldown id="nav-drilldown">
+          <p-drilldown-item identifier="id-1" label="Some Label (1)">
+            <p-drilldown-item identifier="id-1-1" label="Some Label (1-1)">
+              <p-drilldown-link href="#">Some anchor (1-1)</p-drilldown-link>
+              <p-drilldown-link href="#">Some anchor (1-1)</p-drilldown-link>
+            </p-drilldown-item>
+            <p-drilldown-link href="#">Some anchor (1)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (1)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (1)</p-drilldown-link>
+          </p-drilldown-item>
+          <p-drilldown-item identifier="id-2" label="Some Label (2)">
+            <p-drilldown-link href="#">Some anchor (2)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (2)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (2)</p-drilldown-link>
+          </p-drilldown-item>
+          <p-drilldown-item identifier="id-3" label="Some Label (3)">
+            <p-drilldown-link href="#">Some anchor (3)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (3)</p-drilldown-link>
+          </p-drilldown-item>
+        </p-drilldown>
+      </nav>
+      <p-button-pure class="p-static-xs -m-static-xs sm:hidden" title="Search" type="button" icon="search" hide-label="true">Search</p-button-pure>
+    </div>
+    <p-crest class="sm:hidden" href="#"></p-crest>
+    <p-wordmark class="max-sm:hidden" href="#"></p-wordmark>
+    <div class="flex flex-wrap gap-static-md items-center justify-end">
+      <p-button-pure class="p-static-xs -m-static-xs max-sm:hidden" title="Search" type="button" icon="search" hide-label="true">Search</p-button-pure>
+      <p-link-pure class="p-static-xs -m-static-xs max-sm:hidden" title="Favorites" href="#" icon="heart" hide-label="true">Favorites</p-link-pure>
+      <p-link-pure class="p-static-xs -m-static-xs" title="Shopping Cart" href="#" icon="shopping-cart" hide-label="true">Shopping Cart</p-link-pure>
+      <p-button-pure class="p-static-xs -m-static-xs" title="User" type="button" icon="user" hide-label="true">User</p-button-pure>
+    </div>
+  </div>
+  <div class="col-full flex justify-center py-static-xs px-static-md border-t-thin border-contrast-low">
+    <p-tabs-bar>
+      <a href="#">All categories</a>
+      <p-divider class="me-static-md" direction="vertical"></p-divider>
+      <a href="#">Timepieces</a>
+      <a href="#">Bags & Luggage</a>
+      <a href="#">Heritage</a>
+      <a href="#">Vehicle Accessories</a>
+      <a href="#">Eyewear</a>
+    </p-tabs-bar>
+  </div>
+</header>
+
+<main class="grid-template">
+  <div class="col-full grid grid-cols-subgrid items-end h-[clamp(480px,80vh,1000px)]">
+    <img class="col-span-full row-span-full min-w-full w-full min-h-full h-full object-cover object-center" src="/assets/lights.jpg" alt="" />
+    <div class="col-wide row-span-full mb-fluid-lg dark">
+      <h2 class="prose-heading-lg">Pattern</h2>
+      <h1 class="prose-display-lg">Header</h1>
+    </div>
+  </div>
+</main>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
