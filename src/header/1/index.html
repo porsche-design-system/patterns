@@ -14,13 +14,33 @@
     <div class="flex flex-wrap gap-static-md items-center justify-start">
       <nav aria-label="Main">
         <p-button-pure id="nav-button" class="p-static-xs -m-static-xs" theme="dark" type="button" icon="menu-lines" hide-label="{base: true, s: false}" aria="{'aria-haspopup': 'dialog'}">Menu</p-button-pure>
+        <p-drilldown id="nav-drilldown">
+          <p-drilldown-item identifier="id-1" label="Some Label (1)">
+            <p-drilldown-item identifier="id-1-1" label="Some Label (1-1)">
+              <p-drilldown-link href="#">Some anchor (1-1)</p-drilldown-link>
+              <p-drilldown-link href="#">Some anchor (1-1)</p-drilldown-link>
+            </p-drilldown-item>
+            <p-drilldown-link href="#">Some anchor (1)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (1)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (1)</p-drilldown-link>
+          </p-drilldown-item>
+          <p-drilldown-item identifier="id-2" label="Some Label (2)">
+            <p-drilldown-link href="#">Some anchor (2)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (2)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (2)</p-drilldown-link>
+          </p-drilldown-item>
+          <p-drilldown-item identifier="id-3" label="Some Label (3)">
+            <p-drilldown-link href="#">Some anchor (3)</p-drilldown-link>
+            <p-drilldown-link href="#">Some anchor (3)</p-drilldown-link>
+          </p-drilldown-item>
+        </p-drilldown>
       </nav>
     </div>
-    <p-crest class="sm:hidden" theme="dark" href="#"></p-crest>
+    <p-crest class="sm:hidden" href="#"></p-crest>
     <p-wordmark class="max-sm:hidden" theme="dark" href="#"></p-wordmark>
     <div class="flex flex-wrap gap-static-md items-center justify-end">
-      <p-button-pure class="p-static-xs -m-static-xs" theme="dark" type="button" icon="search" hide-label="true">Search</p-button-pure>
-      <p-button-pure class="p-static-xs -m-static-xs" theme="dark" type="button" icon="user" hide-label="true">Login</p-button-pure>
+      <p-button-pure class="p-static-xs -m-static-xs" title="Search" theme="dark" type="button" icon="search" hide-label="true">Search</p-button-pure>
+      <p-button-pure class="p-static-xs -m-static-xs" title="User" theme="dark" type="button" icon="user" hide-label="true">User</p-button-pure>
     </div>
   </div>
 </header>
@@ -28,13 +48,13 @@
 <main class="grid-template">
   <div
     class="col-full grid grid-cols-subgrid items-end h-[clamp(480px,80vh,1000px)]">
-    <video class="col-span-full row-span-full min-w-full min-h-full object-cover object-center" poster="/assets/mood-porsche-gts.webp" loop muted autoplay playsinline aria-hidden="true">
+    <video class="col-span-full row-span-full min-w-full w-full min-h-full h-full object-cover object-center" poster="/assets/mood-porsche-gts.webp" loop muted autoplay playsinline aria-hidden="true">
       <source src="/assets/mood-porsche-gts.mp4" type="video/mp4">
       <source src="/assets/mood-porsche-gts.webm" type="video/webm">
     </video>
-    <div class="col-wide row-span-full mb-fluid-lg">
-      <h2 class="prose-heading-lg dark">Pattern</h2>
-      <h1 class="prose-display-lg dark">Header</h1>
+    <div class="col-wide row-span-full mb-fluid-lg dark">
+      <h2 class="prose-heading-lg">Pattern</h2>
+      <h1 class="prose-display-lg">Header</h1>
     </div>
   </div>
 </main>
