@@ -7,7 +7,7 @@
     - img "Porsche"
   - button "Search"
   - status
-  - button "Login"
+  - button "User"
   - status
 - main:
   - heading "Pattern" [level=2]
