@@ -1,0 +1,21 @@
+name: 'Default branch'
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    name: 'Build'
+    uses: ./.github/workflows/build.yml
+  test:
+    name: 'Test'
+    uses: ./.github/workflows/test.yml
+    needs:
+      - build
+  deploy:
+    name: 'Deploy'
+    uses: ./.github/workflows/deploy.yml
+    needs:
+      - test

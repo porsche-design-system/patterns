@@ -1,0 +1,14 @@
+- banner:
+  - navigation "Main":
+    - button "Menu"
+    - status
+  - link "Porsche":
+    - /url: "#"
+    - img "Porsche"
+  - button "Search"
+  - status
+  - button "Login"
+  - status
+- main:
+  - heading "Pattern" [level=2]
+  - heading "Header" [level=1]

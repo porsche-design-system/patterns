@@ -1,0 +1,19 @@
+name: 'Setup and install'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: 'Setup Node'
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    - name: 'Cache node_modules'
+      uses: actions/cache@v4
+      id: cache-node_modules
+      with:
+        path: '**/node_modules'
+        key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+    - name: 'Install node_modules'
+      if: steps.cache-node_modules.outputs.cache-hit != 'true'
+      run: yarn install --frozen-lockfile
+      shell: bash

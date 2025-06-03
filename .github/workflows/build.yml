@@ -1,0 +1,25 @@
+name: 'Build'
+
+on:
+  workflow_call:
+
+jobs:
+  patterns:
+    name: 'Patterns'
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.52.0
+      options: --user 1001
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v4
+      - name: 'Setup and install'
+        uses: ./.github/actions/setup-and-install
+      - name: 'Build'
+        run: yarn build
+        shell: bash
+      - name: 'Upload build artifact'
+        uses: actions/upload-artifact@v4
+        with:
+          name: patterns
+          path: ./dist

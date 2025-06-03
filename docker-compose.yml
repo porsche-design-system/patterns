@@ -1,0 +1,12 @@
+services:
+  repository:
+    image: mcr.microsoft.com/playwright:v1.52.0
+    working_dir: /opt/repository
+    ports:
+      - "5173:5173"
+      - "4173:4173"
+    volumes:
+      - ./:/opt/repository:cached
+      - node-modules:/opt/repository/node_modules
+volumes:
+  node-modules:
