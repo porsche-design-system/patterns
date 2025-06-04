@@ -52,6 +52,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         'header-1': resolve(__dirname, 'src/header/1/index.html'),
+        'footer-1': resolve(__dirname, 'src/footer/1/index.html'),
         'header-2': resolve(__dirname, 'src/header/2/index.html'),
       },
     },
