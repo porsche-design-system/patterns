@@ -7,173 +7,230 @@
   <title>Footer (Pattern)</title>
 </head>
 
-<body class="bg-surface">
+<body>
 
-
-  <footer class="grid-template prose-text-sm _pds-grid-visualization">
-    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md">
-      <div class=" rounded-lg col-span-full md:col-span-one-third">
-        <form class="mt-fluid-md grid ga" action="#" onsubmit="return false;">
-          <p-select class="[--p-select-background-color:transparent]" name="region" label="Change your delivery country" value="usa">
-            <p-optgroup label="Asia">
-              <p-select-option value="china"><img src="/assets/flags/china.svg" alt="" />China</p-select-option>
-              <p-select-option value="japan"><img src="/assets/flags/japan.svg" alt="" />Japan</p-select-option>
-              <p-select-option value="south-korea"><img src="/assets/flags/south-korea.svg" alt="" />South Korea</p-select-option>
-            </p-optgroup>
-            <p-optgroup label="Europe">
-              <p-select-option value="austria"><img src="/assets/flags/austria.svg" alt="" />Austria</p-select-option>
-              <p-select-option value="france"><img src="/assets/flags/france.svg" alt="" />France</p-select-option>
-              <p-select-option value="germany"><img src="/assets/flags/germany.svg" alt="" />Germany</p-select-option>
-              <p-select-option value="great-britain"><img src="/assets/flags/great-britain.svg" alt="" />Great Britain</p-select-option>
-              <p-select-option value="italy"><img src="/assets/flags/italy.svg" alt="" />Italy</p-select-option>
-              <p-select-option value="portugal"><img src="/assets/flags/portugal.svg" alt="" />Portugal</p-select-option>
-              <p-select-option value="spain"><img src="/assets/flags/spain.svg" alt="" />Spain</p-select-option>
-            </p-optgroup>
-            <p-optgroup label="North America">
-              <p-select-option value="canada"><img src="/assets/flags/canada.svg" alt="" />Canada</p-select-option>
-              <p-select-option value="usa"><img src="/assets/flags/usa.svg" alt="" />USA</p-select-option>
-            </p-optgroup>
-          </p-select>
-        </form>
-      </div>
-        <div class="col-span-one-third rounded-lg"></div>
-        <div class="col-span-one-third rounded-lg"></div>
-      </div>
-    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md mb-fluid-lg mt-fluid-sm">
-      <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
-        <div class="flex items-start gap-fluid-sm flex-col mb-fluid-md">
-        <h5 class="prose-text-2xs  text-contrast-medium">Legal Services</h5>
+<footer class="grid-template py-fluid-lg bg-surface">
+  <form
+    class="col-extended grid xs:grid-cols-[repeat(2,minmax(0,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md"
+    action="#" onsubmit="return false;">
+    <p-select class="[--p-select-background-color:transparent]" name="region" label="Change your delivery country"
+              value="usa">
+      <p-optgroup label="Asia">
+        <p-select-option value="china"><img src="/assets/flags/china.svg" alt=""/>China</p-select-option>
+        <p-select-option value="japan"><img src="/assets/flags/japan.svg" alt=""/>Japan</p-select-option>
+        <p-select-option value="south-korea"><img src="/assets/flags/south-korea.svg" alt=""/>South Korea
+        </p-select-option>
+      </p-optgroup>
+      <p-optgroup label="Europe">
+        <p-select-option value="austria"><img src="/assets/flags/austria.svg" alt=""/>Austria</p-select-option>
+        <p-select-option value="france"><img src="/assets/flags/france.svg" alt=""/>France</p-select-option>
+        <p-select-option value="germany"><img src="/assets/flags/germany.svg" alt=""/>Germany</p-select-option>
+        <p-select-option value="great-britain"><img src="/assets/flags/great-britain.svg" alt=""/>Great Britain
+        </p-select-option>
+        <p-select-option value="italy"><img src="/assets/flags/italy.svg" alt=""/>Italy</p-select-option>
+        <p-select-option value="portugal"><img src="/assets/flags/portugal.svg" alt=""/>Portugal</p-select-option>
+        <p-select-option value="spain"><img src="/assets/flags/spain.svg" alt=""/>Spain</p-select-option>
+      </p-optgroup>
+      <p-optgroup label="North America">
+        <p-select-option value="canada"><img src="/assets/flags/canada.svg" alt=""/>Canada</p-select-option>
+        <p-select-option value="usa"><img src="/assets/flags/usa.svg" alt=""/>USA</p-select-option>
+      </p-optgroup>
+    </p-select>
+  </form>
+  <div
+    class="col-extended grid xs:grid-cols-[repeat(2,minmax(0,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-x-fluid-md gap-y-fluid-lg mt-fluid-sm mb-fluid-lg">
+    <div class="flex flex-col gap-fluid-sm">
+      <h5 class="prose-text-2xs text-contrast-medium">Legal Services</h5>
+      <ul class="grid gap-fluid-sm">
+        <li>
           <p-link-pure href="#" icon="none">
             Terms and Conditions
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Privacy Notice
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             California Privacy
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Imprint and Legal Notice
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Accessibility Statement
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Open Source Software Notice
           </p-link-pure>
-        </div>
-      </div>
-      <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
-        <div class="flex items-start gap-fluid-sm flex-col mb-fluid-md">
-          <h5 class="prose-text-2xs  text-contrast-medium">Porsche Design</h5>
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-fluid-sm">
+      <h5 class="prose-text-2xs text-contrast-medium">Porsche Design</h5>
+      <ul class="grid gap-fluid-sm">
+        <li>
           <p-link-pure href="#" icon="none">
             Press
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Jobs and Careers
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Studio F. A. Porsche
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Data Privacy
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Timepieces Warranty & Service
           </p-link-pure>
-        </div>
-      </div>
-      <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
-        <div class="flex items-start gap-fluid-sm flex-col mb-fluid-md">
-          <h5 class="prose-text-2xs  text-contrast-medium">Online Services</h5>
-          <p-link-pure href="ä" icon="none">
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-fluid-sm">
+      <h5 class="prose-text-2xs text-contrast-medium">Online Services</h5>
+      <ul class="grid gap-fluid-sm">
+        <li>
+          <p-link-pure href="#" icon="none">
             My Orders
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Porsche Homepage
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Porsche Car Configurator
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Porsche New and Pre-Owned Vehicles
           </p-link-pure>
+        </li>
+        <li>
           <p-link-pure href="#" icon="none">
             Compare Porsche models
           </p-link-pure>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md">
-      <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
-        <p-link-pure href="#" icon="logo-instagram" hide-label="true" size="medium" class="p-static-md">
-          Some label
-        </p-link-pure>
-        <p-link-pure href="#" icon="logo-facebook" hide-label="true" size="medium" class="p-static-md">
-          Some label
-        </p-link-pure>
-        <p-link-pure href="#" icon="logo-x" hide-label="true" size="medium" class="p-static-md">
-          Some label
-        </p-link-pure>
-        <p-link-pure href="#" icon="logo-pinterest" hide-label="true" size="medium"  class="p-static-md">
-          Some label
-        </p-link-pure>
-        <p-link-pure href="#" icon="logo-youtube" hide-label="true" size="medium" class="p-static-md">
-          Some label
-        </p-link-pure>
-      </div>
-      <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
-        <a href="#" class="inline-block focus-visible:outline outline-focus outline-offset-2 rounded-sm">
-          <img src="https://images.ctfassets.net/1oyzmkwpf3d5/hskK1tzN0CS8cdGIttugu/883187acee1c66e7d4593141f3e659c3/Visa.svg" alt="visa logo">
-        </a>
-        <a href="#" class="inline-block focus-visible:outline outline-focus outline-offset-2 rounded-sm">
-          <img src="https://images.ctfassets.net/1oyzmkwpf3d5/34g5LXmVhTzseATJL7CLFj/501eba81ff4787357277faff4ea04f4d/Master__1_.svg"  alt="master card logo">
-        </a>
-        <a href="#" class="inline-block focus-visible:outline outline-focus outline-offset-2 rounded-sm">
-          <img src="https://images.ctfassets.net/1oyzmkwpf3d5/4NeGQiGeYT5VZ3G591li1k/c12d0cc589f608a6db3d3e7d2aae0255/PayPal.svg" alt="paypal logo">
-        </a>
-        <a href="#" class="inline-block focus-visible:outline outline-focus outline-offset-2 rounded-sm">
-          <img src="https://images.ctfassets.net/1oyzmkwpf3d5/6JEo7ofdwOP56sCFDTu76K/f984ed3e02d9a66cea006b3455c9c799/applePay.svg" alt="apple pay logo">
-        </a>
-      </div>
+  </div>
+  <div class="col-extended grid sm:grid-cols-[auto_minmax(0,1fr)] items-center gap-x-fluid-lg gap-y-static-lg">
+    <div class="flex gap-fluid-md">
+      <p-link-pure href="#" icon="logo-instagram" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
+        Some label
+      </p-link-pure>
+      <p-link-pure href="#" icon="logo-facebook" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
+        Some label
+      </p-link-pure>
+      <p-link-pure href="#" icon="logo-x" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
+        Some label
+      </p-link-pure>
+      <p-link-pure href="#" icon="logo-pinterest" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
+        Some label
+      </p-link-pure>
+      <p-link-pure href="#" icon="logo-youtube" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
+        Some label
+      </p-link-pure>
     </div>
-    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md">
-      <div class="col-span-full  ">
-        <p class="prose-text-2xs  mb-fluid-md text-contrast-medium">
-          The consumption and emission values stated were determined in accordance with the legally prescribed measurement procedures. Since September 1, 2017, certain new vehicles have been type-approved in accordance with the Worldwide Harmonized  Vehicles Test Procedure (WLTP), a more realistic test procedure for measuring fuel/electricity consumption and CO₂ emissions. Since September 1, 2018, the WLTP has replaced the New European Driving Cycle (NEDC). Due to the more realistic testing conditions, the fuel/electricity consumption and CO₂ emission values measured according to the WLTP are, in many cases, higher than those measured according to the NEDC. As a result, vehicle taxation may change accordingly starting September 1, 2018. Further information on the differences between WLTP and NEDC can be found at www.porsche.com/wltp.        </p>
-        <p class="prose-text-2xs  mb-fluid-md text-contrast-medium">
-          Currently, regardless of the applied type-approval procedure, it remains mandatory to communicate NEDC values. The additional disclosure of WLTP values may be done on a voluntary basis until their mandatory use. In the case of new vehicles type-approved according to WLTP, NEDC values are derived from WLTP values and stated during the transitional period. Where NEDC values are stated as ranges, they do not refer to a specific individual vehicle and are not part of the offer. They serve solely for comparison purposes between different vehicle types. Optional equipment and accessories (attachments, tire formats, etc.) can alter relevant vehicle parameters such as weight, rolling resistance, and aerodynamics, and can influence fuel/electricity consumption, CO₂ emissions, and performance values of a vehicle in addition to weather and traffic conditions and individual driving behavior. Further information on the official fuel/electricity consumption and official specific CO₂ emissions of new passenger cars can be found in the "Guide on fuel consumption, CO₂ emissions and electricity consumption of new passenger cars," available free of charge at all sales outlets and from DAT.
-        </p>
-        <p class="prose-text-2xs  mb-fluid-md text-contrast-medium">
-          Neither the number of active users of this Porsche Connect Store nor the number of active users of the App Center available in the connected vehicle (Macan electric) upon activation of the Connect services exceeds the threshold of 45 million active users in the European Union as defined by the Digital Services Act (DSA). Important information regarding fully electric Porsche models can be found here.
-        </p>
-      </div>
+    <div class="flex gap-fluid-xs">
+      <a href="#" class="focus-visible:outline outline-focus outline-offset-2 rounded-sm">
+        <img
+          src="https://images.ctfassets.net/1oyzmkwpf3d5/hskK1tzN0CS8cdGIttugu/883187acee1c66e7d4593141f3e659c3/Visa.svg"
+          alt="visa logo"/>
+      </a>
+      <a href="#" class="focus-visible:outline outline-focus outline-offset-2 rounded-sm">
+        <img
+          src="https://images.ctfassets.net/1oyzmkwpf3d5/34g5LXmVhTzseATJL7CLFj/501eba81ff4787357277faff4ea04f4d/Master__1_.svg"
+          alt="master card logo"/>
+      </a>
+      <a href="#" class="focus-visible:outline outline-focus outline-offset-2 rounded-sm">
+        <img
+          src="https://images.ctfassets.net/1oyzmkwpf3d5/4NeGQiGeYT5VZ3G591li1k/c12d0cc589f608a6db3d3e7d2aae0255/PayPal.svg"
+          alt="paypal logo"/>
+      </a>
     </div>
-    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md">
-      <div class="col-span-full flex flex-wrap items-center justify-center">
-        <p-wordmark></p-wordmark>
-      </div>
-      <div class="col-span-full flex flex-wrap items-center justify-center">
-        <p class="prose-text-2xs  mb-fluid-xs text-contrast-medium">
-          © 2025 Porsche Sales and Marketplace, Inc.
-        </p>
-      </div>
-      <div class="col-span-full flex flex-wrap mb-fluid-lg items-center justify-center gap-fluid-md">
+  </div>
+  <div class="col-extended grid gap-fluid-md mt-fluid-md">
+    <p class="prose-text-2xs text-contrast-medium">
+      The consumption and emission values stated were determined in accordance with the legally prescribed measurement
+      procedures. Since September 1, 2017, certain new vehicles have been type-approved in accordance with the
+      Worldwide Harmonized Vehicles Test Procedure (WLTP), a more realistic test procedure for measuring
+      fuel/electricity consumption and CO₂ emissions. Since September 1, 2018, the WLTP has replaced the New European
+      Driving Cycle (NEDC). Due to the more realistic testing conditions, the fuel/electricity consumption and CO₂
+      emission values measured according to the WLTP are, in many cases, higher than those measured according to the
+      NEDC. As a result, vehicle taxation may change accordingly starting September 1, 2018. Further information on
+      the differences between WLTP and NEDC can be found at www.porsche.com/wltp.
+    </p>
+    <p class="prose-text-2xs text-contrast-medium">
+      Currently, regardless of the applied type-approval procedure, it remains mandatory to communicate NEDC values.
+      The additional disclosure of WLTP values may be done on a voluntary basis until their mandatory use. In the case
+      of new vehicles type-approved according to WLTP, NEDC values are derived from WLTP values and stated during the
+      transitional period. Where NEDC values are stated as ranges, they do not refer to a specific individual vehicle
+      and are not part of the offer. They serve solely for comparison purposes between different vehicle types.
+      Optional equipment and accessories (attachments, tire formats, etc.) can alter relevant vehicle parameters such
+      as weight, rolling resistance, and aerodynamics, and can influence fuel/electricity consumption, CO₂ emissions,
+      and performance values of a vehicle in addition to weather and traffic conditions and individual driving
+      behavior. Further information on the official fuel/electricity consumption and official specific CO₂ emissions
+      of new passenger cars can be found in the "Guide on fuel consumption, CO₂ emissions and electricity consumption
+      of new passenger cars," available free of charge at all sales outlets and from DAT.
+    </p>
+    <p class="prose-text-2xs text-contrast-medium">
+      Neither the number of active users of this Porsche Connect Store nor the number of active users of the App
+      Center available in the connected vehicle (Macan electric) upon activation of the Connect services exceeds the
+      threshold of 45 million active users in the European Union as defined by the Digital Services Act (DSA).
+      Important information regarding fully electric Porsche models can be found here.
+    </p>
+  </div>
+  <div class="col-extended grid gap-fluid-md justify-items-center mt-fluid-md">
+    <p-wordmark></p-wordmark>
+    <p class="prose-text-2xs text-contrast-medium">
+      © 2025 Porsche Sales and Marketplace, Inc.
+    </p>
+    <ul class="flex flex-wrap justify-center gap-fluid-md">
+      <li>
         <p-link-pure href="#" icon="none" size="x-small" underline="true">
           Legal notice
         </p-link-pure>
+      </li>
+      <li>
         <p-link-pure href="#" icon="none" size="x-small" underline="true">
           Privacy notice
         </p-link-pure>
+      </li>
+      <li>
         <p-link-pure href="#" icon="none" size="x-small" underline="true">
           Accessibility Statement
         </p-link-pure>
+      </li>
+      <li>
         <p-link-pure href="#" icon="none" size="x-small" underline="true">
           Open Source Software Notice
         </p-link-pure>
-      </div>
-    </div>
-  </footer>
+      </li>
+    </ul>
+  </div>
+</footer>
 
 <script type="module" src="main.js"></script>
 </body>
