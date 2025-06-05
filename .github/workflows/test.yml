@@ -32,7 +32,7 @@ jobs:
       - name: 'Download build artifact'
         uses: actions/download-artifact@v4
         with:
-          name: patterns
+          name: examples
           path: ./dist
       - name: 'E2E'
         run: yarn test:e2e
@@ -51,7 +51,7 @@ jobs:
       - name: 'Download build artifact'
         uses: actions/download-artifact@v4
         with:
-          name: patterns
+          name: examples
           path: ./dist
       - name: 'A11y'
         run: yarn test:a11y
@@ -75,7 +75,7 @@ jobs:
   #     - name: 'Download build artifact'
   #       uses: actions/download-artifact@v4
   #       with:
-  #         name: patterns
+  #         name: examples
   #         path: ./dist
   #     - name: 'VRT'
   #       run: yarn test:vrt --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}

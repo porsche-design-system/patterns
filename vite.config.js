@@ -33,7 +33,7 @@ const transformIndexHtmlPlugin = () => {
         getFontFaceStyles(),
         getFontLinks(),
         getIconLinks(),
-        getMetaTagsAndIconLinks({ appTitle: 'Patterns by Porsche Design System' }),
+        getMetaTagsAndIconLinks({ appTitle: 'Examples by Porsche Design System' }),
       ].join('');
 
       const bodyPartials = [getLoaderScript()].join('');
@@ -44,16 +44,16 @@ const transformIndexHtmlPlugin = () => {
 };
 
 export default defineConfig({
-  base: '/patterns/',
+  base: '/examples/',
   server: {
     host: true,
   },
   build: {
     rollupOptions: {
       input: {
-        'header-1': resolve(__dirname, 'src/header/1/index.html'),
-        'footer-1': resolve(__dirname, 'src/footer/1/index.html'),
-        'header-2': resolve(__dirname, 'src/header/2/index.html'),
+        'patterns-header-1': resolve(__dirname, 'src/patterns/header/1/index.html'),
+        'patterns-header-2': resolve(__dirname, 'src/patterns/header/2/index.html'),
+        'patterns-footer-1': resolve(__dirname, 'src/patterns/footer/1/index.html'),
       },
     },
   },

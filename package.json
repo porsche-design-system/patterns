@@ -1,5 +1,5 @@
 {
-  "name": "@porsche-design-system/patterns",
+  "name": "@porsche-design-system/examples",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,7 @@
     "test:vrt": "playwright test --config=tests/vrt/config/playwright.config.ts",
     "test:vrt:rename-snapshots": "tsx tests/vrt/scripts/renameSnapshots.ts",
     "test:vrt:write-snapshots": "tsx tests/vrt/scripts/writeSnapshots.ts",
-    "docker": "docker compose -f docker-compose.yml -p porsche-design-system-patterns run --service-ports --rm repository yarn \"${@}\""
+    "docker": "docker compose -f docker-compose.yml -p porsche-design-system-examples run --service-ports --rm repository yarn \"${@}\""
   },
   "dependencies": {
     "@porsche-design-system/components-js": "^3.28.0",

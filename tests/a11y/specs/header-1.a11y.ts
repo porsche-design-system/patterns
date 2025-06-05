@@ -2,7 +2,7 @@ import { expect, test } from '../utils';
 
 test.describe('has WCAG 2.2 (AA) compliance', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/patterns/header/1/');
+    await page.goto('/examples/patterns/header/1/');
     await expect(page.getByText('Header')).toBeVisible();
   });
 
