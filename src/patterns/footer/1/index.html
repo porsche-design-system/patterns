@@ -7,11 +7,11 @@
   <title>Footer (Pattern)</title>
 </head>
 
-<body class="bg-base">
+<body class="bg-surface">
 
 
   <footer class="grid-template prose-text-sm _pds-grid-visualization">
-    <div class="col-basic grid grid-cols-subgrid gap-y-fluid-md">
+    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md">
       <div class=" rounded-lg col-span-full md:col-span-one-third">
         <form class="mt-fluid-md grid ga" action="#" onsubmit="return false;">
           <p-select class="[--p-select-background-color:transparent]" name="region" label="Change your delivery country" value="usa">
@@ -39,10 +39,10 @@
         <div class="col-span-one-third rounded-lg"></div>
         <div class="col-span-one-third rounded-lg"></div>
       </div>
-    <div class="col-basic grid grid-cols-subgrid gap-y-fluid-md mb-fluid-lg mt-fluid-sm">
+    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md mb-fluid-lg mt-fluid-sm">
       <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
-        <div class="flex items-start gap-fluid-xs flex-col">
-        <h1 class="prose-text-2xs  text-contrast-medium">Legal Services</h1>
+        <div class="flex items-start gap-fluid-sm flex-col mb-fluid-md">
+        <h5 class="prose-text-2xs  text-contrast-medium">Legal Services</h5>
           <p-link-pure href="#" icon="none">
             Terms and Conditions
           </p-link-pure>
@@ -64,8 +64,8 @@
         </div>
       </div>
       <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
-        <div class="flex items-start gap-fluid-xs flex-col">
-          <h1 class="prose-text-2xs  text-contrast-medium">Porsche Design</h1>
+        <div class="flex items-start gap-fluid-sm flex-col mb-fluid-md">
+          <h5 class="prose-text-2xs  text-contrast-medium">Porsche Design</h5>
           <p-link-pure href="#" icon="none">
             Press
           </p-link-pure>
@@ -84,8 +84,8 @@
         </div>
       </div>
       <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
-        <div class="flex items-start gap-fluid-xs flex-col">
-          <h1 class="prose-text-2xs  text-contrast-medium">Online Services</h1>
+        <div class="flex items-start gap-fluid-sm flex-col mb-fluid-md">
+          <h5 class="prose-text-2xs  text-contrast-medium">Online Services</h5>
           <p-link-pure href="ä" icon="none">
             My Orders
           </p-link-pure>
@@ -104,23 +104,25 @@
         </div>
       </div>
     </div>
-    <div class="col-basic grid grid-cols-subgrid gap-y-fluid-md">
-      <div class="col-span-full">
-        <p-link-pure href="#" icon="logo-instagram" hide-label="true" class="p-static-md">
+    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md">
+      <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
+        <p-link-pure href="#" icon="logo-instagram" hide-label="true" size="medium" class="p-static-md">
           Some label
         </p-link-pure>
-        <p-link-pure href="#" icon="logo-facebook" hide-label="true" class="p-static-md">
+        <p-link-pure href="#" icon="logo-facebook" hide-label="true" size="medium" class="p-static-md">
           Some label
         </p-link-pure>
-        <p-link-pure href="#" icon="logo-x" hide-label="true" class="p-static-md">
+        <p-link-pure href="#" icon="logo-x" hide-label="true" size="medium" class="p-static-md">
           Some label
         </p-link-pure>
-        <p-link-pure href="#" icon="logo-pinterest" hide-label="true" class="p-static-md">
+        <p-link-pure href="#" icon="logo-pinterest" hide-label="true" size="medium"  class="p-static-md">
           Some label
         </p-link-pure>
-        <p-link-pure href="#" icon="logo-youtube" hide-label="true" class="p-static-md">
+        <p-link-pure href="#" icon="logo-youtube" hide-label="true" size="medium" class="p-static-md">
           Some label
         </p-link-pure>
+      </div>
+      <div class="col-span-full sm:col-span-one-half md:col-span-one-third">
         <a href="#" class="inline-block focus-visible:outline outline-focus outline-offset-2 rounded-sm">
           <img src="https://images.ctfassets.net/1oyzmkwpf3d5/hskK1tzN0CS8cdGIttugu/883187acee1c66e7d4593141f3e659c3/Visa.svg" alt="visa logo">
         </a>
@@ -135,7 +137,7 @@
         </a>
       </div>
     </div>
-    <div class="col-basic grid grid-cols-subgrid gap-y-fluid-md">
+    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md">
       <div class="col-span-full  ">
         <p class="prose-text-2xs  mb-fluid-md text-contrast-medium">
           The consumption and emission values stated were determined in accordance with the legally prescribed measurement procedures. Since September 1, 2017, certain new vehicles have been type-approved in accordance with the Worldwide Harmonized  Vehicles Test Procedure (WLTP), a more realistic test procedure for measuring fuel/electricity consumption and CO₂ emissions. Since September 1, 2018, the WLTP has replaced the New European Driving Cycle (NEDC). Due to the more realistic testing conditions, the fuel/electricity consumption and CO₂ emission values measured according to the WLTP are, in many cases, higher than those measured according to the NEDC. As a result, vehicle taxation may change accordingly starting September 1, 2018. Further information on the differences between WLTP and NEDC can be found at www.porsche.com/wltp.        </p>
@@ -147,7 +149,7 @@
         </p>
       </div>
     </div>
-    <div class="col-basic grid grid-cols-subgrid gap-y-fluid-md">
+    <div class="col-extended grid sm:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md">
       <div class="col-span-full flex flex-wrap items-center justify-center">
         <p-wordmark></p-wordmark>
       </div>
