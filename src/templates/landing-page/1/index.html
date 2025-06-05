@@ -46,12 +46,12 @@
 
 <main class="grid-template gap-y-fluid-xl pb-fluid-2xl">
 
-  <div class="col-full grid grid-cols-subgrid items-end h-[clamp(480px,80vh,1000px)] after:absolute after:inset-[-60px_0_0_0] after:-z-1 after:pointer-events-none after:bg-fade-to-t">
-    <video class="col-span-full row-span-full min-w-full w-full min-h-full h-full object-cover object-center" poster="/assets/mood-porsche-gts.webp" loop muted autoplay playsinline aria-hidden="true">
+  <div class="z-0 col-full grid grid-cols-subgrid items-end h-[clamp(480px,80vh,1000px)] relative before:absolute before:inset-[50%_0_0_0] before:z-2 before:pointer-events-none before:bg-fade-to-t">
+    <video class="z-1 col-span-full row-span-full min-w-full w-full min-h-full h-full object-cover object-center" poster="/assets/mood-porsche-gts.webp" loop muted autoplay playsinline aria-hidden="true">
       <source src="/assets/mood-porsche-gts.mp4" type="video/mp4">
       <source src="/assets/mood-porsche-gts.webm" type="video/webm">
     </video>
-    <div class="col-extended row-span-full mb-fluid-lg dark">
+    <div class="z-3 col-extended row-span-full mb-fluid-lg dark">
       <h1 class="prose-display-sm pb-fluid-md">Landing Page</h1>
       <p-button theme="dark" variant="ghost">
         Some label
@@ -60,7 +60,6 @@
   </div>
 
   <div class="col-full grid grid-cols-subgrid gap-y-fluid-md dark bg-base p-fluid-xl -mt-fluid-xl -mb-fluid-xl">
-
     <div class="col-basic grid grid-cols-subgrid gap-y-fluid-md" >
       <p-link-tile class="col-span-full sm:col-span-one-half" href="#" label="Tickets 2026" description="Teaser Headline" compact="true" weight="regular" aspect-ratio="{base: '4/3', xs: '16/9', s: '3/4', m: '1/1'}">
         <img src="/assets/chrono-car.webp" alt="Some image description" />
@@ -122,7 +121,7 @@
     class="col-extended grid xs:grid-cols-[repeat(2,minmax(0,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md"
     action="#" onsubmit="return false;">
     <p-select class="[--p-select-background-color:transparent]" name="region" label="Change your delivery country"
-              value="usa">
+              value="germany">
       <p-optgroup label="Asia">
         <p-select-option value="china"><img src="/assets/flags/china.svg" alt=""/>China</p-select-option>
         <p-select-option value="japan"><img src="/assets/flags/japan.svg" alt=""/>Japan</p-select-option>
