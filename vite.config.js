@@ -59,6 +59,7 @@ export default defineConfig({
         'patterns-header-1': resolve(__dirname, 'src/patterns/header/1/index.html'),
         'patterns-header-2': resolve(__dirname, 'src/patterns/header/2/index.html'),
         'patterns-footer-1': resolve(__dirname, 'src/patterns/footer/1/index.html'),
+        'templates-landing-page-1': resolve(__dirname, 'src/templates/landing-page/1/index.html'),
       },
     },
   },
