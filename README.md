@@ -12,6 +12,12 @@ and [partials](https://designsystem.porsche.com/v3/partials/introduction).
 - [Variant 1](https://porsche-design-system.github.io/examples/patterns/header/1/)
 - [Variant 2](https://porsche-design-system.github.io/examples/patterns/header/2/)
 
+### Footer
+
+- [Variant 1](https://porsche-design-system.github.io/examples/patterns/footer/1/)
+
 ## Templates
 
 ### Landing Page
+
+- [Variant 1](https://porsche-design-system.github.io/examples/templates/landing-page/1/)

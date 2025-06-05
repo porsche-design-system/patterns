@@ -9,7 +9,7 @@
 
 <body class="bg-base">
 
-<header class="grid-template absolute inset-x-0 z-1 before:absolute before:inset-[0_0_-60px_0] before:-z-1 before:pointer-events-none before:bg-fade-to-b">
+<header class="z-1 grid-template absolute inset-x-0 before:absolute before:inset-[0_0_-60px_0] before:-z-1 before:pointer-events-none before:bg-fade-to-b">
   <div class="col-wide grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-fluid-md items-center min-h-[80px]">
     <div class="flex flex-wrap gap-static-md items-center justify-start">
       <nav aria-label="Main">
@@ -47,12 +47,12 @@
 
 <main class="grid-template">
   <div
-    class="col-full grid grid-cols-subgrid items-end h-[clamp(480px,80vh,1000px)]">
-    <video class="col-span-full row-span-full min-w-full w-full min-h-full h-full object-cover object-center" poster="/assets/mood-porsche-gts.webp" loop muted autoplay playsinline aria-hidden="true">
+    class="z-0 col-full grid grid-cols-subgrid items-end h-[clamp(480px,80vh,1000px)]">
+    <video class="z-0 col-span-full row-span-full min-w-full w-full min-h-full h-full object-cover object-center" poster="/assets/mood-porsche-gts.webp" loop muted autoplay playsinline aria-hidden="true">
       <source src="/assets/mood-porsche-gts.mp4" type="video/mp4">
       <source src="/assets/mood-porsche-gts.webm" type="video/webm">
     </video>
-    <div class="col-wide row-span-full mb-fluid-lg dark">
+    <div class="z-1 col-wide row-span-full mb-fluid-lg dark">
       <h2 class="prose-heading-lg">Pattern</h2>
       <h1 class="prose-display-lg">Header</h1>
     </div>
