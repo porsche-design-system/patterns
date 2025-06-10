@@ -46,20 +46,21 @@
 
 <main class="grid-template gap-y-fluid-xl pb-fluid-2xl">
 
-  <div class="z-0 col-full grid grid-cols-subgrid items-end h-[clamp(480px,80vh,1000px)] relative before:absolute before:inset-[50%_0_0_0] before:z-2 before:pointer-events-none before:bg-linear-to-t before:from-base before:to-transparent dark">
+  <section aria-labelledby="heading-section-1" class="z-0 col-full grid grid-cols-subgrid items-end h-[clamp(480px,80vh,1000px)] relative before:absolute before:inset-[50%_0_0_0] before:z-2 before:pointer-events-none before:bg-linear-to-t before:from-base before:to-transparent dark">
     <video class="z-1 col-span-full row-span-full min-w-full w-full min-h-full h-full object-cover object-center" poster="/assets/mood-porsche-gts.webp" loop muted autoplay playsinline aria-hidden="true">
       <source src="/assets/mood-porsche-gts.mp4" type="video/mp4">
       <source src="/assets/mood-porsche-gts.webm" type="video/webm">
     </video>
     <div class="z-3 col-extended row-span-full mb-fluid-lg">
-      <h1 class="prose-display-sm pb-fluid-md">Landing Page</h1>
+      <h1 id="heading-section-1" class="prose-display-sm pb-fluid-md">Landing Page</h1>
       <p-button theme="dark" variant="ghost">
         Some label
       </p-button>
     </div>
-  </div>
+    <p-button theme="dark" variant="secondary" compact="true" hide-label="true" icon="pause" class="z-3 col-wide place-self-end row-span-full" id="pause-button">Pause Video</p-button>
+  </section>
 
-  <div class="col-full grid grid-cols-subgrid gap-y-fluid-md dark bg-base p-fluid-xl -mt-fluid-xl -mb-fluid-xl">
+  <section aria-label="Some section 2 label" class="col-full grid grid-cols-subgrid gap-y-fluid-md dark bg-base p-fluid-xl -mt-fluid-xl -mb-fluid-xl">
     <div class="col-basic grid grid-cols-subgrid gap-y-fluid-md" >
       <p-link-tile class="col-span-full sm:col-span-one-half" href="#" label="Tickets 2026" description="Teaser Headline" compact="true" weight="regular" aspect-ratio="{base: '4/3', xs: '16/9', s: '3/4', m: '1/1'}">
         <img src="/assets/chrono-car.webp" alt="Some image description" />
@@ -68,9 +69,9 @@
         <img src="/assets/addon.webp" alt="Some image description" />
       </p-link-tile>
     </div>
-  </div>
+  </section>
 
-  <div class="col-full grid grid-cols-subgrid py-fluid-xl ">
+  <section aria-label="Some section 3 label" class="col-full grid grid-cols-subgrid py-fluid-xl ">
     <p-carousel class="col-span-full" slides-per-page="{ base: 1, xs: 1, m: 1 }" align-header="center" width="extended" heading="Carousel">
       <p-link-tile href="#" label="Timeless Enthusiast" description="Teaser Heading" compact="true"
                    aspect-ratio="{base: '1:1', xs: '16:9'}" weight="regular">
@@ -91,9 +92,9 @@
       </p-link-tile>
 
     </p-carousel>
-  </div>
+  </section>
 
-  <div class="col-basic grid grid-cols-subgrid gap-y-fluid-xl">
+  <section aria-label="Some section 4 label" class="col-basic grid grid-cols-subgrid gap-y-fluid-xl">
     <div class="col-span-full grid grid-cols-subgrid gap-y-fluid-lg">
       <img class="col-span-full md:col-start-1 md:col-end-7 md:row-start-1 w-full aspect-4/3 md:aspect-3/4 object-cover rounded-lg" src="/assets/cockpit.webp" alt="Some alternative text for screen readers describing the image"/>
       <div class="col-span-full md:col-start-8 md:col-end-13 md:row-start-1 flex flex-col justify-center items-start">
@@ -112,14 +113,15 @@
         <p-link class="mt-fluid-lg" href="#">Some label</p-link>
       </div>
     </div>
-  </div>
+  </section>
 
 </main>
 
 <footer class="grid-template py-fluid-lg bg-surface">
+  <h2 class="sr-only">Porsche Landingpage Footer</h2>
   <form
     class="col-extended grid xs:grid-cols-[repeat(2,minmax(0,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-fluid-md"
-    action="#" onsubmit="return false;">
+    action="#" onsubmit="return false;" aria-label="Change your delivery country">
     <p-select class="[--p-select-background-color:transparent]" name="region" label="Change your delivery country"
               value="germany">
       <p-optgroup label="Asia">
@@ -144,10 +146,10 @@
       </p-optgroup>
     </p-select>
   </form>
-  <div
+  <nav aria-label="Footer"
     class="col-extended grid xs:grid-cols-[repeat(2,minmax(0,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-x-fluid-md gap-y-fluid-lg mt-fluid-sm mb-fluid-lg">
     <div class="flex flex-col gap-fluid-sm">
-      <h5 class="prose-text-2xs text-contrast-medium">Legal Services</h5>
+      <h3 id="heading-footer-1" class="prose-text-2xs text-contrast-medium">Legal Services</h3>
       <ul class="grid gap-fluid-sm">
         <li>
           <p-link-pure href="#" icon="none">
@@ -182,7 +184,7 @@
       </ul>
     </div>
     <div class="flex flex-col gap-fluid-sm">
-      <h5 class="prose-text-2xs text-contrast-medium">Porsche Design</h5>
+      <h3 class="prose-text-2xs text-contrast-medium">Porsche Design</h3>
       <ul class="grid gap-fluid-sm">
         <li>
           <p-link-pure href="#" icon="none">
@@ -212,7 +214,7 @@
       </ul>
     </div>
     <div class="flex flex-col gap-fluid-sm">
-      <h5 class="prose-text-2xs text-contrast-medium">Online Services</h5>
+      <h3 class="prose-text-2xs text-contrast-medium">Online Services</h3>
       <ul class="grid gap-fluid-sm">
         <li>
           <p-link-pure href="#" icon="none">
@@ -241,23 +243,23 @@
         </li>
       </ul>
     </div>
-  </div>
-  <div class="col-extended grid sm:grid-cols-[auto_minmax(0,1fr)] items-center gap-x-fluid-lg gap-y-static-lg">
+  </nav>
+  <article aria-label="Social media and payment service providers" class="col-extended grid sm:grid-cols-[auto_minmax(0,1fr)] items-center gap-x-fluid-lg gap-y-static-lg">
     <div class="flex gap-fluid-md">
       <p-link-pure href="#" icon="logo-instagram" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
-        Some label
+        Instagram
       </p-link-pure>
       <p-link-pure href="#" icon="logo-facebook" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
-        Some label
+        Facebook
       </p-link-pure>
       <p-link-pure href="#" icon="logo-x" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
-        Some label
+        X
       </p-link-pure>
       <p-link-pure href="#" icon="logo-pinterest" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
-        Some label
+        Pinterest
       </p-link-pure>
       <p-link-pure href="#" icon="logo-youtube" hide-label="true" size="medium" class="p-static-sm -m-static-sm">
-        Some label
+        YouTube
       </p-link-pure>
     </div>
     <div class="flex gap-fluid-xs">
@@ -277,8 +279,8 @@
           alt="paypal logo"/>
       </a>
     </div>
-  </div>
-  <div class="col-extended grid gap-fluid-md mt-fluid-md">
+  </article>
+  <article aria-label="Consumption and emission information" class="col-extended grid gap-fluid-md mt-fluid-md">
     <p class="prose-text-2xs text-contrast-medium">
       The consumption and emission values stated were determined in accordance with the legally prescribed measurement
       procedures. Since September 1, 2017, certain new vehicles have been type-approved in accordance with the
@@ -308,7 +310,7 @@
       threshold of 45 million active users in the European Union as defined by the Digital Services Act (DSA).
       Important information regarding fully electric Porsche models can be found here.
     </p>
-  </div>
+  </article>
   <div class="col-extended grid gap-fluid-md justify-items-center mt-fluid-md">
     <p-wordmark></p-wordmark>
     <p class="prose-text-2xs text-contrast-medium">
